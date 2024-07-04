@@ -8,7 +8,6 @@ struct NeuralNetworkModule : public bdm::BaseBiologyModule {
 
   NeuralNetworkModule() : BaseBiologyModule(gAllEventIds) {}
 
-
   void Run(bdm::Agent* agent) override {
     auto* cell = bdm_static_cast<bdm::Cell*>(agent);
     
@@ -25,6 +24,7 @@ struct NeuralNetworkModule : public bdm::BaseBiologyModule {
     float mlp_output = output.cast<float>();
 
     // Use the MLP output to influence the cell behavior
+    // The organoid grows/shrinks in response to the binary classification output from the AI model
     if (mlp_output > 0.5) {
       cell->ChangeVolume(400);
     } else {
