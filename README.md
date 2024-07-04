@@ -1,8 +1,8 @@
 # About
 
-This project is to simulate Organoid Intelligence (OI), a new emerging field that where organoids, which are three-dimensional structures grown from stem cells that can mimic certain aspects of human organs, are integrated with technologies to potentially perform computational tasks or interact with their environments in intelligent ways. This concept is quite novel and speculative, blending biotechnology with artificial intelligence.
+This project is to simulate Organoid Intelligence (OI), a new emerging field where organoids, which are three-dimensional structures grown from stem cells that can mimic certain aspects of human organs, are integrated with technologies to potentially perform computational tasks or interact with their environments in intelligent ways. This concept is quite novel and speculative, blending biotechnology with artificial intelligence.
 
-As such, this project demonstrates the integration of a neural network with a biological simulation using BioDynaMo. We train a simple Multi-Layer Perceptron (MLP) using TensorFlow and use it to influence the behavior of cells in a BioDynaMo simulation.
+As such, this project demonstrates the integration of a neural network with a biological simulation using BioDynaMo. We train a simple Multi-Layer Perceptron (MLP) using TensorFlow to influence the behavior of cells in a BioDynaMo simulation. The organoid grows/shrinks in response to the binary classification output from the AI model, similar to biological system responses like neural plasticity and stem cell differentiation (see `NOTES.md`).
 
 The simulation can be ran using the `run.sh` file. Ensure **tensorflow** and **pybind11** have been installed using `pip` first before running.
 
