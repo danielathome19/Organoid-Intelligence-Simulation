@@ -24,12 +24,10 @@ struct NeuralNetworkModule : public bdm::BaseBiologyModule {
     float mlp_output = output.cast<float>();
 
     // Use the MLP output to influence the cell behavior
-    // The organoid grows/shrinks in response to the binary classification output from the AI model
-    if (mlp_output > 0.5) {
-      cell->ChangeVolume(400);
-    } else {
-      cell->ChangeVolume(-400);
-    }
+    if (mlp_output > 0.5)
+      cell->ChangeVolume(400);   // Growth
+    else
+      cell->ChangeVolume(-400);  // Shrinkage
   }
 };
 
