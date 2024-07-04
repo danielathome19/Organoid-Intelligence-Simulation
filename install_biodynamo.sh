@@ -1,0 +1,1 @@
+curl https://biodynamo.github.io/install | bash
