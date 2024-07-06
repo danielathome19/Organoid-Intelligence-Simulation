@@ -6,7 +6,7 @@ As such, this project demonstrates the integration of a neural network with a bi
 
 Before running, ensure **tensorflow**, **matplotlib**, and **brian2** have been installed using `pip`.
 
-**Note**: This simulation was originally intended to be performed using the BioDynaMo library. However, numerous failed attempts to interface with the library led to the reversion to a simpler system (i.e., Brian2). The previous code can be found in the `OLD` folder.
+**Note**: This simulation was originally intended to be performed using the BioDynaMo library. However, numerous failed attempts to interface with the library led to the reversion to a simpler system (i.e., Brian2). The previous code can be found in the [OLD](https://github.com/danielathome19/Organoid-Intelligence-Simulation/tree/main/OLD) folder.
 
 
 # Project Structure
