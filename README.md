@@ -4,12 +4,7 @@ This project is to simulate Organoid Intelligence (OI), a new emerging field whe
 
 As such, this project demonstrates the integration of a neural network with a biological simulation using [BioDynaMo](https://www.biodynamo.org/). We train a simple Multi-Layer Perceptron (MLP) using TensorFlow to influence the behavior of cells in a BioDynaMo simulation. The organoid grows/shrinks in response to the binary classification output from the AI model, similar to biological system responses like neural plasticity and stem cell differentiation (see `NOTES.md`).
 
-The simulation can be run using the `run.sh` file. Ensure **tensorflow** and **pybind11** have been installed using `pip` first before running. Or, use the provided Dockerfile with the following commands:
-
-```bash
-docker build -t oi-simulation .
-docker run --rm oi-simulation
-```
+The simulation can be run using the `run.sh` file. Ensure **tensorflow** and **pybind11** have been installed using `pip` first before running.
 
 
 # Project Structure
@@ -21,7 +16,6 @@ project-root/
 ├── mlp_model.py                  # Script to create and train the MLP model
 ├── mlp_inference.py              # Script to load the model and perform inference
 ├── biodynamo_simulation.cpp      # BioDynaMo simulation code integrating the MLP model
-├── install_biodynamo.sh          # Shell script to install the BioDynaMo library
 └── run.sh                        # Shell script to automate the build and run process
 ```
 
