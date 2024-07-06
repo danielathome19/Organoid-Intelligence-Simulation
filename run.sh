@@ -7,21 +7,8 @@ python3 mlp_model.py
 
 
 # Step 2
-echo "Preparing the build directory..."
-rm -rf build
-mkdir build
-cd build
+echo "Running the Brian2 simulation..."
+python3 brian2_simulation.py
 
 
-# Step 3
-echo "Building the BioDynaMo simulation..."
-cmake ..
-make
-
-
-# Step 4
-echo "Running the BioDynaMo simulation..."
-./biodynamo_simulation
-
-
-echo "Simulation completed."
+echo "Simulation completed. Check 'membrane_potential.png' for output plot."
