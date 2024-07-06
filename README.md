@@ -1,6 +1,6 @@
 # About
 
-This project is to simulate Organoid Intelligence (OI), a new emerging field where organoids, which are three-dimensional structures grown from stem cells that can mimic certain aspects of human organs, are integrated with technologies to potentially perform computational tasks or interact with their environments in intelligent ways. This concept is quite novel and speculative, blending biotechnology with artificial intelligence.
+This project simulates Organoid Intelligence (OI), a new emerging field where organoids, which are three-dimensional structures grown from stem cells that can mimic certain aspects of human organs, are integrated with technologies to potentially perform computational tasks or interact with their environments in intelligent ways. This concept is quite novel and speculative, blending biotechnology with artificial intelligence.
 
 As such, this project demonstrates the integration of a neural network with a biological simulation using [Brian2](https://github.com/brian-team/brian2). We train a simple Multi-Layer Perceptron (MLP) using TensorFlow to influence the behavior of cells in a Brian2 simulation. The organoid (neuron) spikes in response to the binary classification output from the AI model, similar to biological system responses like neural plasticity and spiking activity (see `NOTES.md`).
 
