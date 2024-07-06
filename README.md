@@ -4,7 +4,7 @@ This project is to simulate Organoid Intelligence (OI), a new emerging field whe
 
 As such, this project demonstrates the integration of a neural network with a biological simulation using [BioDynaMo](https://www.biodynamo.org/). We train a simple Multi-Layer Perceptron (MLP) using TensorFlow to influence the behavior of cells in a BioDynaMo simulation. The organoid grows/shrinks in response to the binary classification output from the AI model, similar to biological system responses like neural plasticity and stem cell differentiation (see `NOTES.md`).
 
-Before running, ensure **tensorflow** and **pybind11** have been installed using `pip,` and that you have BioDynaMo installed. You must modify the `CMakeLists.txt` file to include the path to pybind and your version of BioDynamo. The simulation can then be run using the `run.sh` file.
+Before running, ensure **tensorflow** and **pybind11** have been installed using `pip,` and that you have BioDynaMo installed and sourced using their `thisbdm.sh` file. You must modify the `CMakeLists.txt` file to include the path to pybind and your version of BioDynamo. The simulation can then be run using the `run.sh` file.
 
 
 # Project Structure
